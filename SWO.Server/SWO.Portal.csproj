@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Business\Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SWO.Shared\SWO.Shared.csproj" />
   </ItemGroup>
 

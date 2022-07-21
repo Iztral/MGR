@@ -1,9 +1,10 @@
 ﻿using SWO.Shared.Abstractions.Enums;
+using SWO.Shared.Abstractions.Models;
 using System.ComponentModel.DataAnnotations;
 
 namespace SWO.Shared.Models
 {
-    public class Member : BaseEntity
+    public class MemberViewModel : BaseViewModel
     {
         [Required]
         public string IdentityID { get; set; }

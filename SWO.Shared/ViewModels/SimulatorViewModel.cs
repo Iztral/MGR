@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SWO.Shared.Models
 {
-    public class Simulator : BaseModel
+    public class SimulatorViewModel : BaseViewModel
     {
         [Required]
         public string Name { get; set; }

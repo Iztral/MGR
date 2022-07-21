@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SWO.Shared.Models
 {
-    public class GradeTemplate : BaseModel
+    public class GradeTemplateViewModel : BaseViewModel
     {
         [Required]
         public string Name { get; set; }

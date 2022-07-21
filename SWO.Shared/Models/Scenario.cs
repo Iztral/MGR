@@ -1,9 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using SWO.Shared.Abstractions.Models;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SWO.Shared.Models
 {
-    public class Scenario : BaseEntity
+    public class Scenario : BaseModel
     {
         [Required]
         public string Name { get; set; }

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SWO.Shared.Models
 {
-    public class SensorValue : BaseModel
+    public class SensorValueViewModel : BaseViewModel
     {
         public string Value { get; set; }
         public DateTime TimeStamp { get; set; }

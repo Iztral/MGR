@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SWO.Shared.Models
 {
-    public class Simulation : BaseModel
+    public class SimulationViewModel : BaseViewModel
     {
         [ForeignKey("Trainee")]
         [Required]

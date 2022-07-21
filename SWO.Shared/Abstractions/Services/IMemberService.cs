@@ -1,9 +1,8 @@
 ﻿using SWO.Shared.Abstractions.Interfaces;
-using SWO.Shared.ViewModels.Base;
-
+using SWO.Shared.Models;
 namespace SWO.Shared.Abstractions.Services
 {
-    public interface IUserService : IService<UserViewModel>
+    public interface IMemberService : IService<MemberViewModel>
     {
 
     }

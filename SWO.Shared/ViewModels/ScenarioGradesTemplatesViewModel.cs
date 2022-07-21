@@ -3,31 +3,24 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SWO.Shared.Models
 {
-    public class ScenarioGradesTemplates : BaseModel
+    public class ScenarioGradesTemplatesViewModel : BaseViewModel
     {
-        [ForeignKey("Scenario")]
         public int ScenarioID { get; set; }
 
-        [ForeignKey("GradeTemplate")]
         public int TemplateID { get; set; }
 
         public bool Assigned { get; set; }
 
-        public ScenarioGradesTemplates()
+        public ScenarioGradesTemplatesViewModel()
         {
 
         }
 
-        public ScenarioGradesTemplates(int scenarioID, int templateID)
+        public ScenarioGradesTemplatesViewModel(int scenarioID, int templateID)
         {
             ScenarioID = scenarioID;
             TemplateID = templateID;
             Assigned = false;
         }
-
-        #region EF
-        public virtual Scenario Scenario { get; set; }
-        public virtual GradeTemplate GradeTemplate { get; set; }
-        #endregion
     }
 }

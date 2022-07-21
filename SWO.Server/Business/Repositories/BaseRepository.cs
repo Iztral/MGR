@@ -1,10 +1,10 @@
 ﻿using SWO.Portal.Data;
 using SWO.Shared.Abstractions.Communication;
-using SWO.Shared.Models;
+using SWO.Shared.Abstractions.Models;
 
 namespace SWO.Portal.Business.Repositories
 {
-    public class BaseRepository<T> where T : BaseEntity
+    public class BaseRepository<T> where T : BaseModel
     {
         protected readonly ApplicationDbContext _context;
 

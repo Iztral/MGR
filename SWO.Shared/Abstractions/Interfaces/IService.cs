@@ -13,8 +13,6 @@ namespace SWO.Shared.Abstractions.Interfaces
 
         public IEnumerable<T> GetAll();
 
-        public T Get(T record);
-
         public T GetById(int id);
 
         public ResponseMessage Add(T record);

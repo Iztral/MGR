@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SWO.Shared.Models
 {
-    public class Location : BaseModel
+    public class LocationViewModel : BaseViewModel
     {
         [Required]
         public string Name { get; set; }

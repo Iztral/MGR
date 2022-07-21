@@ -3,9 +3,9 @@ using SWO.Shared.Resources;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SWO.Shared.Models
+namespace SWO.Shared.Abstractions.Models
 {
-    public class BaseEntity
+    public class BaseModel
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

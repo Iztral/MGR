@@ -27,7 +27,7 @@ namespace SWO.Portal.Data
 
         public DbSet<Simulator> Simulators { get; set; }
 
-        public DbSet<User> Members { get; set; }
+        public DbSet<Member> Members { get; set; }
 
         public DbSet<ScenarioGradesTemplates> ScenarioGradesTemplates { get; set; }
     }

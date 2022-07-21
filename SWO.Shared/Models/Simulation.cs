@@ -23,8 +23,8 @@ namespace SWO.Shared.Models
         public int GradeSum { get; set; }
 
         #region EF
-        public virtual User Trainee { get; set; }
-        public virtual User Instructor { get; set; }
+        public virtual Member Trainee { get; set; }
+        public virtual Member Instructor { get; set; }
         public virtual Scenario Scenario { get; set; }
         public virtual ICollection<Grade>? Grades { get; set; }
         #endregion

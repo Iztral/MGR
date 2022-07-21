@@ -3,7 +3,7 @@ using SWO.Shared.Models;
 
 namespace SWO.Shared.Abstractions.Repositories
 {
-    public interface IUserRepository : IRepository<User>
+    public interface IMemberRepository : IRepository<Member>
     {
 
     }

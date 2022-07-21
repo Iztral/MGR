@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SWO.Shared.Models
 {
-    public class User : BaseEntity
+    public class Member : BaseEntity
     {
         [Required]
         public string IdentityID { get; set; }

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SWO.Models;
+using SWO.Shared.ViewModels.System;
 using System.Diagnostics;
 
 namespace SWO.Portal.Controllers
@@ -26,7 +26,7 @@ namespace SWO.Portal.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new ErrorViewModel());
         }
     }
 }

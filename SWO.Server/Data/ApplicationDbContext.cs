@@ -30,5 +30,13 @@ namespace SWO.Portal.Data
         public DbSet<Member> Members { get; set; }
 
         public DbSet<ScenarioGradesTemplates> ScenarioGradesTemplates { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            builder.Entity<Member>().HasMany(u => u.Simulations);
+            builder.Entity<Simulation>().HasOne(u => u.Instructor);
+            builder.Entity<Simulation>().HasOne(u => u.Trainee);
+        }
     }
 }
